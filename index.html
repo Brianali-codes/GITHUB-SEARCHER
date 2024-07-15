@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITHUB USER SEARCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg">
+    <div id="MAIN">
+
+        <!--fixed sidebar-->
+
+
+        <div class="sidebar" id="BAR21">
+
+            <div class="actual-dash" id="BAR2">
+
+                <div class="start" style="display: flex;flex-direction: column;grid-template-columns: auto;">
+                    <button class="DB"><img src="assets/home.png" alt="" class="img"></button>
+                    <button class="DB"><img src="assets/bookmark.png" alt="" class="img"></button>
+                    <button class="DB"><img src="assets/about.png" alt="" class="img"></button>
+                </div>
+                <div class="end">
+                    <button class="DB"><img src="assets/settings.png" alt="" class="img"></button>
+                </div>
+
+            </div>
+        </div>
+        <!--content goes here-->
+
+
+
+
+        <div class="content">
+
+            <div class="searcherDIV" id="BAR1">
+                <input type="text" placeholder="SEARCH FOR A GITHUB USER"
+                    style="width: 90%;height: 50px;border-style: solid;border-radius: 10px;" id="display">
+                <button style="background-color: white;" id="searcher" onclick="fetchuserInfo()"> SEARCH </button>
+            </div>
+
+            <!--First row containing User name and details, -->
+
+            <div id="FIRST">
+                <p class="description">Hello and welcome to my first Project in API experimenting. Type in the search
+                    box A GITHUB USER AND WAIT</p>
+                <p class="description">Brian Ali || all rights reserved || © 2024</p>
+                <button id="START" onclick="refreshScreen()">START</button>
+            </div>
+
+
+
+
+            <div class="gamespace" id="GPS" style="border: solid ;border-radius: 20px;padding: 20px;">
+
+                <div style="display: flex;flex-direction: row;gap: 20px ;width: 100%;justify-content: center;align-items: center;"
+                    id="gps1">
+
+                    <div class="image" style="border: solid;border-radius: 10px;">
+                        <img src="assets/PH.webp" alt="" id="user-image">
+                    </div>
+
+                    <div class="game-info" style="padding: 5px;height: 100%;display: flex;flex-direction: column;gap: 10px;">
+
+                        <div style="height: 50%;border: solid ;padding: 20px;">
+                            <p id="user-name">NAME:</p>
+                            <hr>
+                            <p id="user-bio">BIO:</p>
+                            <hr>
+                            <p id="user-web">WEBSITE:</p>
+                            <hr>
+                            <p id="user-joined">Joined:</p>
+                            <hr>
+                        </div>
+
+                        <div style="height: 50%;border: solid;padding: 20px;">
+                            <p id="user-followers">No of followers:</p>
+                            <hr>
+                            <p id="user-link">Github link:</p>
+                            <hr>
+                            <p id="user-repos">Users Repos:</p>
+                            <hr>
+                            <p id="users-twitter">Twitter Username:</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
