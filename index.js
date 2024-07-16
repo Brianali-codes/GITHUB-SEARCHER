@@ -4,7 +4,6 @@ function refreshScreen() {
     let LP = document.getElementById("FIRST")
     let bar = document.getElementById("BAR1")
 
-    screen.style.display = "flex"
     LP.style.display = "none"
     bar.style.display = "flex"
 
