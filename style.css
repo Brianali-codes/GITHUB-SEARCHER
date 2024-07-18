@@ -23,8 +23,8 @@
     border-style: solid; 
     gap: 40px;
 }
-.bg{
-    background-color: rgb(255, 255, 255);
+#bg{
+    background-color: white;
 }
 .img{
     width: 30px;   
@@ -154,17 +154,10 @@
     flex-direction: column;
     width: 100%;
 }
-
-/*--darkmode{
-    background-color :black;
-    border-color : white
-    color:white;
-}
-*/
 #display{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    background-color: transparent;
+    font-size: 35px;
+    color: greenyellow;
 }
 
 @media (max-width: 600px) {
@@ -175,5 +168,20 @@
       align-items: center;
     }
   }
-
+#change-color{
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width:60px;
+    position: fixed;
+    border: solid;
+    top: 1;
+    bottom: 10px;
+    left: 1;
+    right: 10px;
+    border-radius: 30px;
+}
+#change-color:hover{
+    background-color: gray;
+    cursor: pointer;
+}
 
