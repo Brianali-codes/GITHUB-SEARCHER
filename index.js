@@ -23,9 +23,9 @@ async function fetchuserInfo() {
             window.alert("Please input a github username!")
         }
         else {
+            document.getElementById("user-name").textContent = `Name : ${USER}`
             document.getElementById("user-bio").textContent = `Bio : ${json.bio}`
-            document.getElementById("user-followers").textContent = `No of followers : ${json.followers}`
-            document.getElementById("user-name").textContent = `Name : ${json.name}`
+            document.getElementById("user-followers").textContent = `No of followers : ${json.followers}` 
             document.getElementById("user-web").textContent = `Website : ${json.blog}`
             document.getElementById("user-link").textContent = `Users Github : ${json.html_url}`
             document.getElementById("user-repos").textContent = `Users number of Repositories : ${json.public_repos}`
